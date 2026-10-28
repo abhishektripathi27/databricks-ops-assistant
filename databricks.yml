@@ -1,0 +1,19 @@
+# Databricks Asset Bundle for the Ops Assistant project.
+bundle:
+  name: ops_assistant
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    description: Unity Catalog catalog for all project objects
+    default: workspace
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      # Replace with your Free Edition workspace URL
+      host: https://dbc-7b2359bd-69d0.cloud.databricks.com

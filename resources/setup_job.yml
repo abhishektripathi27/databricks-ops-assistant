@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    setup_uc:
+      name: ops_assistant_setup_uc
+      tasks:
+        - task_key: create_uc_objects
+          notebook_task:
+            notebook_path: ../src/setup/01_create_uc_objects.py
+            base_parameters:
+              catalog: ${var.catalog}
