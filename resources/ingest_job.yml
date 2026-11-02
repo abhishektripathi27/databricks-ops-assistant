@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    ingest:
+      name: ops_assistant_ingest
+      parameters:
+        - name: catalog
+          default: ${var.catalog}
+      tasks:
+        - task_key: telemetry_pipeline
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.telemetry_pipeline.id}
+        - task_key: parse_docs
+          notebook_task:
+            notebook_path: ../src/ingest/04_parse_docs.py

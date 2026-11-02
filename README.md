@@ -44,7 +44,7 @@ databricks bundle run setup_uc
 
 - [x] Day 1: Workspace, repo, Unity Catalog objects
 - [x] Day 2: Source data (9 PDFs, 576k telemetry rows, 5 planted incidents)
-- [ ] Day 3: Bronze, silver, gold pipelines
+- [x] Day 3: Bronze, silver, gold pipelines + PDF parsing
 - [ ] Day 4: Chunking and vector index
 - [ ] Day 5: Baseline RAG chain
 - [ ] Day 6: Tool-calling agent

@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    telemetry_pipeline:
+      name: ops_assistant_telemetry
+      catalog: ${var.catalog}
+      schema: curated
+      serverless: true
+      continuous: false
+      channel: CURRENT
+      libraries:
+        - file:
+            path: ../src/ingest/03_telemetry_pipeline.py
+      configuration:
+        landing_path: /Volumes/${var.catalog}/raw/telemetry/readings
+        source_catalog: ${var.catalog}

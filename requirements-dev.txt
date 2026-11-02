@@ -2,3 +2,5 @@ databricks-sdk>=0.40
 pytest>=8
 ruff>=0.6
 reportlab>=4.0
+pyspark==4.0.1
+pypdf==5.4.0
