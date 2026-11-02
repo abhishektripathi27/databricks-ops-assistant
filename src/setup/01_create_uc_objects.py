@@ -31,6 +31,7 @@ for schema in ["raw", "curated", "ai"]:
     spark.sql(f"CREATE SCHEMA IF NOT EXISTS {catalog}.{schema}")
 
 spark.sql(f"CREATE VOLUME IF NOT EXISTS {catalog}.raw.docs")
+spark.sql(f"CREATE VOLUME IF NOT EXISTS {catalog}.raw.telemetry")
 
 # COMMAND ----------
 

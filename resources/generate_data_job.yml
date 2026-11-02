@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    generate_data:
+      name: ops_assistant_generate_data
+      parameters:
+        - name: catalog
+          default: ${var.catalog}
+        - name: end_date
+          default: ""   # blank = now; set YYYY-MM-DD for a fixed window
+      tasks:
+        - task_key: generate_telemetry
+          notebook_task:
+            notebook_path: ../src/ingest/02_generate_telemetry.py

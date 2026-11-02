@@ -25,6 +25,8 @@ src/agent/            tool-calling agent
 src/eval/             eval datasets and scorers
 app/                  chatbot UI (Databricks App)
 tests/                unit tests
+tools/                local helpers (PDF corpus builder)
+data/docs/            RAG corpus: 5 equipment manuals, 4 SOPs
 docs/                 architecture notes, eval results
 ```
 
@@ -41,7 +43,7 @@ databricks bundle run setup_uc
 ## Progress
 
 - [x] Day 1: Workspace, repo, Unity Catalog objects
-- [ ] Day 2: Source data
+- [x] Day 2: Source data (9 PDFs, 576k telemetry rows, 5 planted incidents)
 - [ ] Day 3: Bronze, silver, gold pipelines
 - [ ] Day 4: Chunking and vector index
 - [ ] Day 5: Baseline RAG chain
