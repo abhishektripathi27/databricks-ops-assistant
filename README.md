@@ -46,7 +46,7 @@ databricks bundle run setup_uc
 - [x] Day 2: Source data (9 PDFs, 576k telemetry rows, 5 planted incidents)
 - [x] Day 3: Bronze, silver, gold pipelines + PDF parsing
 - [x] Day 4: Chunking, vector index, retrieval metrics
-- [ ] Day 5: Baseline RAG chain
+- [x] Day 5: Baseline RAG chain with citations, tracing, prompt registry
 - [ ] Day 6: Tool-calling agent
 - [ ] Day 7: Evaluation
 - [ ] Day 8: Register and deploy

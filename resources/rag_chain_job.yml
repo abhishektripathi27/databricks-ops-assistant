@@ -1,0 +1,15 @@
+resources:
+  jobs:
+    rag_chain:
+      name: ops_assistant_rag_chain
+      parameters:
+        - name: catalog
+          default: ${var.catalog}
+        - name: k
+          default: "3"
+        - name: trace_destination
+          default: uc       # set to "experiment" if Unity Catalog trace storage is blocked
+      tasks:
+        - task_key: rag_chain
+          notebook_task:
+            notebook_path: ../src/rag/08_rag_chain.py
