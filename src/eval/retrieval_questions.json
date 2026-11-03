@@ -1,0 +1,20 @@
+[
+  {"id": "r01", "question": "The walk-in cooler unit is showing high head pressure. What should I check first?", "expected": [{"doc": "NG_CU-400_Condensing_Unit_Manual.pdf", "section": "E-21"}]},
+  {"id": "r02", "question": "Freezer defrost won't stop. What do I do?", "expected": [{"doc": "NG_EV-220_Freezer_Evaporator_Manual.pdf", "section": "DF-4"}]},
+  {"id": "r03", "question": "Air compressor vibration is above 7 mm/s. How urgent is it and what are the repair steps?", "expected": [{"doc": "NG_AC-75_Air_Compressor_Manual.pdf", "section": "V-03"}]},
+  {"id": "r04", "question": "The conveyor motor tripped on overload during the afternoon peak.", "expected": [{"doc": "NG_CD-900_Conveyor_Drive_Manual.pdf", "section": "OL-2"}]},
+  {"id": "r05", "question": "A forklift battery charger stopped reporting to the network.", "expected": [{"doc": "NG_BC-48_Battery_Charger_Manual.pdf", "section": "C-01"}]},
+  {"id": "r06", "question": "How long can freezer product stay above 10F before it has to be held?", "expected": [{"doc": "SOP-OPS-002_Cold_Chain_Excursion.pdf", "section": "Temperature Limits"}]},
+  {"id": "r07", "question": "How do I release stored energy before working on the air compressor?", "expected": [{"doc": "SOP-OPS-001_Lockout_Tagout.pdf", "section": "Energy Sources"}, {"doc": "NG_AC-75_Air_Compressor_Manual.pdf", "section": "V-03"}]},
+  {"id": "r08", "question": "Who is allowed to remove another technician's lock?", "expected": [{"doc": "SOP-OPS-001_Lockout_Tagout.pdf", "section": "Removing Another"}]},
+  {"id": "r09", "question": "What priority is a V-03 alarm?", "expected": [{"doc": "SOP-OPS-003_Alarm_Escalation.pdf", "section": "Priority Map"}]},
+  {"id": "r10", "question": "How often should condenser coils be cleaned at the Lakeland site?", "expected": [{"doc": "SOP-OPS-004_Preventive_Maintenance.pdf", "section": "Site Adjustments"}, {"doc": "SOP-OPS-004_Preventive_Maintenance.pdf", "section": "PM Schedule"}, {"doc": "NG_CU-400_Condensing_Unit_Manual.pdf", "section": "Preventive Maintenance"}]},
+  {"id": "r11", "question": "What is the normal box temperature range for the cooler condensing unit?", "expected": [{"doc": "NG_CU-400_Condensing_Unit_Manual.pdf", "section": "Normal Operating Ranges"}]},
+  {"id": "r12", "question": "How fast does a technician have to respond to a P1 alarm?", "expected": [{"doc": "SOP-OPS-003_Alarm_Escalation.pdf", "section": "Priority Levels"}]},
+  {"id": "r13", "question": "What refrigerant does the CU-400 use?", "expected": [{"doc": "NG_CU-400_Condensing_Unit_Manual.pdf", "section": "Specifications"}]},
+  {"id": "r14", "question": "How often do compressors in Aurora get an oil sample?", "expected": [{"doc": "SOP-OPS-004_Preventive_Maintenance.pdf", "section": "Site Adjustments"}, {"doc": "SOP-OPS-004_Preventive_Maintenance.pdf", "section": "PM Schedule"}]},
+  {"id": "r15", "question": "What resistance should a healthy defrost termination sensor read?", "expected": [{"doc": "NG_EV-220_Freezer_Evaporator_Manual.pdf", "section": "DF-4"}]},
+  {"id": "r16", "question": "How often should conveyor belt tension be checked?", "expected": [{"doc": "NG_CD-900_Conveyor_Drive_Manual.pdf", "section": "Preventive Maintenance"}, {"doc": "SOP-OPS-004_Preventive_Maintenance.pdf", "section": "PM Schedule"}]},
+  {"id": "r17", "question": "Product in the cooler got warm. What are the first steps and who do I call?", "expected": [{"doc": "SOP-OPS-002_Cold_Chain_Excursion.pdf", "section": "Response Steps"}]},
+  {"id": "r18", "question": "The charger cabinet is overheating.", "expected": [{"doc": "NG_BC-48_Battery_Charger_Manual.pdf", "section": "C-20"}]}
+]

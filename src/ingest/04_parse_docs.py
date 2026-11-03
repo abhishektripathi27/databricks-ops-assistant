@@ -67,7 +67,7 @@ for fn in sorted(os.listdir(DOCS_DIR)):
     if not fn.lower().endswith(".pdf"):
         continue
     reader = PdfReader(os.path.join(DOCS_DIR, fn))
-    title = (reader.metadata.title if reader.metadata and reader.metadata.title else os.path.splitext(fn)[0])
+    title = str(reader.metadata.title) if reader.metadata and reader.metadata.title else os.path.splitext(fn)[0]
     m = MODEL_RE.search(fn)
     for page_no, page in enumerate(reader.pages, start=1):
         text = clean_page(page.extract_text(extraction_mode="layout") or "")

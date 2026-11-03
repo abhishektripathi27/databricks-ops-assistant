@@ -1,0 +1,25 @@
+resources:
+  jobs:
+    rag_index:
+      name: ops_assistant_rag_index
+      parameters:
+        - name: catalog
+          default: ${var.catalog}
+        - name: chunk_tokens
+          default: "400"
+        - name: overlap_tokens
+          default: "50"
+      tasks:
+        - task_key: chunk_docs
+          notebook_task:
+            notebook_path: ../src/rag/05_chunk_docs.py
+        - task_key: build_index
+          depends_on:
+            - task_key: chunk_docs
+          notebook_task:
+            notebook_path: ../src/rag/06_build_index.py
+        - task_key: retrieval_check
+          depends_on:
+            - task_key: build_index
+          notebook_task:
+            notebook_path: ../src/rag/07_retrieval_check.py
